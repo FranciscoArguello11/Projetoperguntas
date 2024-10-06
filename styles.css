@@ -85,3 +85,8 @@ form input[type="reset"] {
 form input[type="reset"]:hover {
     background-color: #3F422B;
 }
+.radio {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 2%;
+}
