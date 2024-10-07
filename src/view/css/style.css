@@ -1,0 +1,45 @@
+.outer-div {
+  background-color: #003366; /* Azul mais escuro */
+  border-radius: 15px;
+  padding: 20px;
+}
+.inner-div {
+  background-color: #3399ff; /* Azul mais claro */
+  border-radius: 10px;
+  /* margin-top: 20px; */
+  padding: 20px;
+}
+
+#btnCadastro {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-30%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+  top: -0.75rem;
+  font-size: 1;
+  color: #007bff;
+}
