@@ -19,19 +19,21 @@
     <title>MindZone</title>
   </head>
 
-  <body>
+  <body class="gradient-background">
     <!----------------- Navbar ------------------>
 
-    <nav class="navbar navbar-dark bg-primary navbar-expand-sm py-2 sticky-top">
+    <!-- <nav class="navbar navbar-dark bg-primary navbar-expand-sm py-2 sticky-top">
       <div class="container-fluid">
         <a href="" class="navbar-brand d-flex align-items-center mx-auto">
           <i class="bi-bootstrap-fill fs-1"></i> MindZone
         </a>
       </div>
-    </nav>
+    </nav> -->
 
     <!----------------- Main Container ------------------>
-    <div class="container d-flex justify-content-center align-items-center flex-column mt-5">
+    <div
+      class="container d-flex justify-content-center align-items-center flex-column mt-5 main-container"
+    >
       <!----------------- Login Container ------------------>
 
       <div class="row border rounded-5 p-3 bg-white shadow box-area col-md-12">
@@ -41,66 +43,148 @@
           class="col-12 col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box text-bg-dark"
         >
           <div class="featured-image mb-3">
-            <img src="./assets/1.png" alt="" class="img-fluid" style="width: 250px" />
+            <img
+              src="./assets/idea-gif.gif"
+              alt=""
+              class=""
+              style="width: 250px"
+            />
           </div>
 
           <p class="fs-2 fw-semibold">MindZone</p>
-          <small class="text-wrap text-center" style="width: 17rem"
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, repellat.</small
+          <small class="text-center" style="width: 20rem"
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            repellat.</small
           >
         </div>
         <!----------------- Right Box ------------------>
 
-        <div class="col-12 col-md-6 right-box">
-          <div class="row align-items-center">
-            <div class="header-text mb-4">
+        <div class="col-12 col-md-6 d-flex right-box">
+          <div class="row align-items-center justify-content-between">
+            <div class="header-text mb-4 text-center">
               <h2>Olá, Fulano</h2>
               <p>Estamos felizes que retornou (=</p>
+            </div>
 
-              <div class="input-group mb-3">
-                <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="E-mail" />
-              </div>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control form-control-lg bg-light fs-6"
+                placeholder="E-mail"
+              />
+            </div>
 
-              <div class="input-group mb-1">
+            <div class="input-group mb-1">
+              <input
+                type="password"
+                class="form-control form-control-lg bg-light fs-6"
+                placeholder="Senha"
+              />
+            </div>
+
+            <div class="input-group mb-5 d-flex justify-content-between mt-2">
+              <div class="form-check">
                 <input
-                  type="password"
-                  class="form-control form-control-lg bg-light fs-6"
-                  placeholder="Senha"
+                  type="checkbox"
+                  class="form-check-input"
+                  id="formCheck"
                 />
+                <label for="formCheck" class="form-check-label"
+                  ><small>Lembrar</small></label
+                >
               </div>
 
-              <div class="input-group mb-5 d-flex justify-content-between mt-2">
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="formCheck" />
-                  <label for="formCheck" class="form-check-label"><small>Lembrar</small></label>
-                </div>
-
-                <div class="forgot">
-                  <small><a href="#">Esqueceu a senha?</a></small>
-                </div>
+              <div class="forgot">
+                <small><a href="#">Esqueceu a senha?</a></small>
               </div>
+            </div>
 
-              <div class="input-group mb-3">
-                <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
-              </div>
+            <div class="input-group mb-3">
+              <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+            </div>
 
-              <div class="input-group mb-3">
-                <button class="btn btn-lg btn-light w-100 fs-6">
-                  <img src="./assets/google.png" style="width: 20px" class="me-2" />
-                  <small>Logar com Google</small>
-                </button>
-              </div>
+            <div class="input-group mb-3">
+              <button class="btn btn-lg btn-light w-100 fs-6">
+                <img
+                  src="./assets/google.png"
+                  style="width: 20px"
+                  class="me-2"
+                />
+                <small>Logar com Google</small>
+              </button>
+            </div>
 
-              <div class="row">
-                <small>Não tem uma conta? <a href="">Crie agora</a></small>
-              </div>
+            <div class="row mt-3">
+              <h3 class="text-center">Não tem uma conta?</h3>
+              <button
+                class="btn btn-lg btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#cadastroModal"
+              >
+                Cadastre-se aqui!
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="row mt-5 mb-5">
-        <h3 class="text-center">Não tem uma conta?</h3>
-        <button class="btn btn-lg btn-success">Cadastre-se aqui!</button>
+      <div class="row mt-5 mb-5"></div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cadastroModal"
+      tabindex="-1"
+      aria-labelledby="cadastroModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cadastroModalLabel">
+              Formulário de Cadastro
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Formulário de cadastro -->
+            <form>
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  placeholder="Digite seu nome"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Digite seu email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="senha"
+                  placeholder="Digite sua senha"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </body>

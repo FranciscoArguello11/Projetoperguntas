@@ -1,28 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40400%3B500&display=swap%27%29%3B');
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #ececec;
+.primary {
+  background-color: #219c90;
 }
 
-nav {
-  width: 100vw !important;
+.secondary {
+  background-color: #e9b824;
+}
+
+.tertiary {
+  background-color: #ee9322;
+}
+
+.quaternary {
+  background-color: #d83f31;
+}
+
+.gradient-background {
+  background: linear-gradient(45deg, #219c90 0%, #ee9322 50%, #d83f31 100%);
+  /*background-size: cover;  Faz a imagem cobrir toda a tela */
+  /*background-position: center;  Centraliza a imagem no elemento */
+  /*background-repeat: no-repeat;  Evita que a imagem se repita */
+  /* height: 100vh;  Garante que o body ocupe a altura total da tela */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background: #ececec; */
+  background-image: url('../assets/5666499.jpg');
 }
 
 /* <!----------------- Main Container ------------------> */
+
+.main-container {
+  height: 20% !important;
+}
 
 /* <!----------------- Login Container ------------------> */
 
 /* <!----------------- Left Box ------------------> */
 
 .left-box {
-  background: #5757e2 !important;
+  /* background: #5757e2 !important; */
+  background-image: url('../assets/bg_left_box.png');
 }
 
 /* <!----------------- Right Box ------------------> */
 
 .right-box {
-  padding: 40px 30px 40px 40px;
+  padding: 10px 30px 40px 40px;
 }
 
 /* <!----------------- Custom Placeholder ------------------> */
