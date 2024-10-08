@@ -1,19 +1,34 @@
-.outer-div {
-  background-color: #003366; /* Azul mais escuro */
-  border-radius: 15px;
-  padding: 20px;
-}
-.inner-div {
-  background-color: #3399ff; /* Azul mais claro */
-  border-radius: 10px;
-  /* margin-top: 20px; */
-  padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40400%3B500&display=swap%27%29%3B');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ececec;
 }
 
-#btnCadastro {
-  display: flex;
-  height: 15vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
+nav {
+  width: 100vw !important;
 }
+
+/* <!----------------- Main Container ------------------> */
+
+/* <!----------------- Login Container ------------------> */
+
+/* <!----------------- Left Box ------------------> */
+
+.left-box {
+  background: #5757e2 !important;
+}
+
+/* <!----------------- Right Box ------------------> */
+
+.right-box {
+  padding: 40px 30px 40px 40px;
+}
+
+/* <!----------------- Custom Placeholder ------------------> */
+
+::placeholder {
+  font-size: 16px;
+}
+
+/* <!----------------- Small Screens ------------------> */

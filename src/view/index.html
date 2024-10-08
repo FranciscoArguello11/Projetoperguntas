@@ -20,6 +20,8 @@
   </head>
 
   <body>
+    <!----------------- Navbar ------------------>
+
     <nav class="navbar navbar-dark bg-primary navbar-expand-sm py-2 sticky-top">
       <div class="container-fluid">
         <a href="" class="navbar-brand d-flex align-items-center mx-auto">
@@ -28,75 +30,77 @@
       </div>
     </nav>
 
-    <div class="container-fluid my-4">
-      <div class="row justify-content-center">
-        <div class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-6 col-xxl-5 p-0">
-          <div class="outer-div">
-            <div class="inner-div">
-              <form action="" method="POST">
-                <h2 class="text-center mb-3">Login</h2>
+    <!----------------- Main Container ------------------>
+    <div class="container d-flex justify-content-center align-items-center flex-column mt-5">
+      <!----------------- Login Container ------------------>
 
-                <div class="form-group">
-                  <div class="d-flex justify-content-center">
-                    <div class="form-floating mb-3 col-11 col-sm-10 col-md-8">
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder=" "
-                        required
-                      />
-                      <label for="email">E-mail</label>
-                    </div>
-                  </div>
+      <div class="row border rounded-5 p-3 bg-white shadow box-area col-md-12">
+        <!----------------- Left Box ------------------>
 
-                  <div class="d-flex justify-content-center">
-                    <div class="form-floating mb-3 col-11 col-sm-10 col-md-8">
-                      <input
-                        type="password"
-                        class="form-control"
-                        name="senha"
-                        id="senha"
-                        placeholder=" "
-                        required
-                      />
-                      <label for="senha">Senha</label>
-                    </div>
-                  </div>
+        <div
+          class="col-12 col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box text-bg-dark"
+        >
+          <div class="featured-image mb-3">
+            <img src="./assets/1.png" alt="" class="img-fluid" style="width: 250px" />
+          </div>
 
-                  <div class="d-flex justify-content-center mb-3">
-                    <a href="#" class="text-muted small text-center"
-                      >Esqueci minha senha</a
-                    >
-                  </div>
+          <p class="fs-2 fw-semibold">MindZone</p>
+          <small class="text-wrap text-center" style="width: 17rem"
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, repellat.</small
+          >
+        </div>
+        <!----------------- Right Box ------------------>
 
-                  <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-success w-50">
-                      Entrar
-                    </button>
-                  </div>
+        <div class="col-12 col-md-6 right-box">
+          <div class="row align-items-center">
+            <div class="header-text mb-4">
+              <h2>Olá, Fulano</h2>
+              <p>Estamos felizes que retornou (=</p>
+
+              <div class="input-group mb-3">
+                <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="E-mail" />
+              </div>
+
+              <div class="input-group mb-1">
+                <input
+                  type="password"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Senha"
+                />
+              </div>
+
+              <div class="input-group mb-5 d-flex justify-content-between mt-2">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="formCheck" />
+                  <label for="formCheck" class="form-check-label"><small>Lembrar</small></label>
                 </div>
-              </form>
+
+                <div class="forgot">
+                  <small><a href="#">Esqueceu a senha?</a></small>
+                </div>
+              </div>
+
+              <div class="input-group mb-3">
+                <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+              </div>
+
+              <div class="input-group mb-3">
+                <button class="btn btn-lg btn-light w-100 fs-6">
+                  <img src="./assets/google.png" style="width: 20px" class="me-2" />
+                  <small>Logar com Google</small>
+                </button>
+              </div>
+
+              <div class="row">
+                <small>Não tem uma conta? <a href="">Crie agora</a></small>
+              </div>
             </div>
           </div>
         </div>
-
-        <hr />
-
-        <div
-          class="d-flex justify-content-center align-items-center flex-column"
-        >
-          <p class="text-center mb-2">
-            Não tem uma conta? <a href="#">Cadastre-se</a>
-          </p>
-          <button
-            class="btn btn-success col-8 col-sm-7 col-md-4 col-lg-3 text-center"
-            id="btnCadastro"
-          >
-            <a href="#" class="text-decoration-none text-white">Cadastre-se</a>
-          </button>
-        </div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <h3 class="text-center">Não tem uma conta?</h3>
+        <button class="btn btn-lg btn-success">Cadastre-se aqui!</button>
       </div>
     </div>
   </body>
